@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!--Links que apontam para outro site que não é nosso-->
+    <p>Você pode acessar o meu <a href="https://github.com/Silva-Lacerda" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--target _blank: faz com que o link externo abra em uma nova guia, ideal para quando o link leva para um site que não é seu -->
+    <!--rel external: indica ao navegador que é um link externo-->
+
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">canal gratuito no Youtube</a></p>
+
+    <h2>Usando links internos</h2><!--Links que apontam para outra pagina do site-->
+    <p>Esta é a primeira pagina do site. Se você quiser, pode
+        acessar a minha <a href="pag002.html" rel="next" target="_self">segunda página</a>
+    </p>
+    <!-- rel prev, rel next, rel external: esses links ajuda os mecanismos de busca a entenderem a 
+     estrutura da série paginada, consolidando propriedades de 
+     indexação e direcionando os usuários para a 
+     página mais relevante, geralmente a primeira da série-->
+
+     <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+     <h1>Links para download</h1>
+     <ul>
+        <li><a href="livro/Cronograma_FullStack_6Meses.pdf" download="Cronograma_FullStack_6Meses"
+            type="application/pdf">Baixar o livro em PDF</a></li>
+
+        <li><a href="livro/Cronograma.zip" download="Cronograma" type="application/zip"></a>Livro compactado em ZIP</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,78 @@
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 0px 10px brgba(0, 0, 0, 0.356);
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    text-indent: 8px;
+    color: var(--cor4);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; /*Altura entre linhas*/
+}
+
+main strong {
+    color: var(--cor4);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main a:hover {
+   text-decoration: underline;
+   color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+}
+
+#pequena {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding: 20px; /*Esse padding depende do outro, em relação a barra preta*/
+    padding-bottom: 56.5%; /*Esse padding meche com o "Tamanho" do video*/
+}
+
+.video iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}

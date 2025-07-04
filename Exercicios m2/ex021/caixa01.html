@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1 { /*Box-Level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* BORDER */
+            /*Sem shortheand*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /*Com shortheand*/
+            border: 10px solid darkslategray;
+
+
+
+            /* PADDING */
+            /*Sem shortheand
+            Config feita com sentido do relogio*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            /*Com shortheand 4 valores - se todos os lados forem com medidas diferentes
+            Config feita com sentido do relogio*/
+            padding: 10px 20px 30px 40px;
+
+             /*Com shortheand 2 valores - TOP e Bottom ficam com 10px, LEFT e RIGHT ficam com 20px*/
+            padding: 10px 20px;
+
+            /*Com shortheand 1 valor - se todos os lados forem com medidas iguais*/
+            padding: 10px; 
+
+
+
+            /* OUTILINE */
+            /*Sem shortheand*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: orange;
+
+            /*Com shortheand*/
+            outline: 5px dashed orange;
+
+
+
+            /* MARGIN */
+            /*Sem shortheand*/
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*Com shortheand 4 valores - se todos os lados forem com medidas diferentes
+            Config feita com sentido do relogio*/
+            margin: 10px 20px 30px 40px;
+
+            /*Com shortheand 4 valores - Centraliza RIGHT e LEFT, 10px para TOP e BOTTOM
+            Config feita com sentido do relogio*/
+            margin: 10px auto 30px auto;
+
+            /*Com shortheand 1 valor - se todos os lados forem com medidas iguais*/
+            margin: 10px;
+            /*Para centralizar no meio*/
+            margin: auto;
+        }
+
+        a { /*Inline-Level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box Level</h1>
+    <p>Parágrafos trambém são exemplos de Box-Level, mas os <a href="#"> links são exemplos de caixas Inline-Level</a>. Vamos ver como tudo funciona</p>
+</body>
+</html>
