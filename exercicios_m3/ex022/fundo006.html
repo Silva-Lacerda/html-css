@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
 
     <style>
         body {
             height: 100vh;
+
+            /*Sem Shorthand
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*Shorthand - background
+            
+            color > image > position > repeat > [OBS: size] > attachment
+            OBS: O size, embora esteja na regra do W3C, não funciona no Sorthand, então deve ser declarado separado
+            */
+
+            /*Com Shorthand - Sem size*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px; /*Espaçamento interno*/
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +44,34 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos quis voluptatem sequi pariatur, aspernatur tempora unde quae ab, accusamus natus voluptates, dolor odio? Necessitatibus id officia saepe totam explicabo?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum eaque illo commodi veniam omnis tempora quibusdam modi assumenda architecto, deleniti dolores nesciunt iusto laborum dolorum corrupti. Dicta, nobis quasi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint repellendus veritatis hic dolorum qui fugiat, tempora magnam sapiente facilis modi sed consequuntur expedita commodi dignissimos est adipisci eaque itaque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi, expedita saepe est atque quisquam debitis eaque impedit rerum quaerat error voluptatibus? Ipsam, aliquam? Nulla dolores iusto assumenda dolore expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio, repudiandae dolorem asperiores aut qui unde veritatis soluta nostrum. Laborum, unde soluta eaque ullam repellat quidem error exercitationem corrupti eos
+        </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos quis voluptatem sequi pariatur, aspernatur tempora unde quae ab, accusamus natus voluptates, dolor odio? Necessitatibus id officia saepe totam explicabo?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum eaque illo commodi veniam omnis tempora quibusdam modi assumenda architecto, deleniti dolores nesciunt iusto laborum dolorum corrupti. Dicta, nobis quasi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint repellendus veritatis hic dolorum qui fugiat, tempora magnam sapiente facilis modi sed consequuntur expedita commodi dignissimos est adipisci eaque itaque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi, expedita saepe est atque quisquam debitis eaque impedit rerum quaerat error voluptatibus? Ipsam, aliquam? Nulla dolores iusto assumenda dolore expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio, repudiandae dolorem asperiores aut qui unde veritatis soluta nostrum. Laborum, unde soluta eaque ullam repellat quidem error exercitationem corrupti eos
+        </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos quis voluptatem sequi pariatur, aspernatur tempora unde quae ab, accusamus natus voluptates, dolor odio? Necessitatibus id officia saepe totam explicabo?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum eaque illo commodi veniam omnis tempora quibusdam modi assumenda architecto, deleniti dolores nesciunt iusto laborum dolorum corrupti. Dicta, nobis quasi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint repellendus veritatis hic dolorum qui fugiat, tempora magnam sapiente facilis modi sed consequuntur expedita commodi dignissimos est adipisci eaque itaque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi, expedita saepe est atque quisquam debitis eaque impedit rerum quaerat error voluptatibus? Ipsam, aliquam? Nulla dolores iusto assumenda dolore expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio, repudiandae dolorem asperiores aut qui unde veritatis soluta nostrum. Laborum, unde soluta eaque ullam repellat quidem error exercitationem corrupti eos
+        </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos quis voluptatem sequi pariatur, aspernatur tempora unde quae ab, accusamus natus voluptates, dolor odio? Necessitatibus id officia saepe totam explicabo?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum eaque illo commodi veniam omnis tempora quibusdam modi assumenda architecto, deleniti dolores nesciunt iusto laborum dolorum corrupti. Dicta, nobis quasi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint repellendus veritatis hic dolorum qui fugiat, tempora magnam sapiente facilis modi sed consequuntur expedita commodi dignissimos est adipisci eaque itaque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi, expedita saepe est atque quisquam debitis eaque impedit rerum quaerat error voluptatibus? Ipsam, aliquam? Nulla dolores iusto assumenda dolore expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio, repudiandae dolorem asperiores aut qui unde veritatis soluta nostrum. Laborum, unde soluta eaque ullam repellat quidem error exercitationem corrupti eos
+        </p>
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos quis voluptatem sequi pariatur, aspernatur tempora unde quae ab, accusamus natus voluptates, dolor odio? Necessitatibus id officia saepe totam explicabo?
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum eaque illo commodi veniam omnis tempora quibusdam modi assumenda architecto, deleniti dolores nesciunt iusto laborum dolorum corrupti. Dicta, nobis quasi.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint repellendus veritatis hic dolorum qui fugiat, tempora magnam sapiente facilis modi sed consequuntur expedita commodi dignissimos est adipisci eaque itaque!
